@@ -1,0 +1,260 @@
+body
+{
+    background-color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    background-image: url(../IMG/bg-pattern-top-desktop.svg) , url(../IMG/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat:no-repeat;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.main
+{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+.user , .review , .rateBoxOne, .rateBoxTwo, .rateBoxThree
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.profile
+{
+    width:40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 20px;
+
+}
+.colored
+{
+    color: hsl(333, 80%, 67%);
+}
+.star
+{
+    width:20px;
+    height: 20px;
+    
+}
+.rateBoxOne, .rateBoxTwo, .rateBoxThree
+{
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding-left: 20px;
+    width:450px;
+    height: 60px;
+}
+.rateBoxOne
+{
+    margin-right: 80px; 
+}
+.rateBoxTwo
+{
+    margin-left: 40px;
+    margin-right: 40px; 
+}
+.rateBoxThree
+{
+    margin-left: 80px;
+}
+.title
+{
+    color: hsl(300, 43%, 22%);
+    font-size: 3rem;
+
+}
+.first-review , .second-review, .third-review
+{
+    background-color: hsl(300, 43%, 22%);
+    padding-left: 35px;
+    padding-right: 50px;
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 20vw;
+    
+}
+
+.first-review
+{
+    margin-bottom: 80px;
+    /* margin-right: 35px; */
+}
+.second-review
+{
+    margin-bottom: 40px;
+    /* margin-right: 35px; */
+}
+
+.review, .comment, .name
+{
+
+    color: hsl(300, 24%, 96%);
+}
+
+.comment
+{
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    line-height: 1.8;
+}
+.firstColumn
+{
+    color: hsl(300, 43%, 22%);   
+    font-size: 15px;
+    font-weight: 700;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+body
+{
+    margin:0;
+    padding:0;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container
+{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+.title
+{
+    margin: 0%;
+    font-weight: 700;
+}
+.review
+{
+    width: 100%;
+       justify-content: space-between;
+       margin-top: 50px;
+}
+
+.name p
+{
+    padding-top: 0%;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+.name .colored 
+{
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    margin-top: 5px;
+}
+
+.leftBox .text {
+ color: hsl(303, 10%, 53%);
+ width: 450px;
+}
+
+/* -----Media Queries----- */
+@media only screen and (max-width:1024px) {
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main
+{
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.review {
+     flex-direction: column;
+     margin-top: 30px;
+    }
+.rateBoxOne, .rateBoxTwo, .rateBoxThree {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 20px;
+    flex-direction: column;
+    height: 70px;
+}   
+.first-review , .second-review , .third-review{
+ padding: 20px;  
+ padding-top: 40px;
+ width: 80vw;
+ margin-right: auto;
+ margin-left: auto;
+ margin-bottom: 20px;
+}
+.first-review p, .second-review p, .third-review p {
+    padding-right: 25px;
+    padding-left: 25px;
+    font-weight: 700;
+}
+.third-review p{
+    padding-bottom: 21px;
+}
+.user
+{
+    padding-left: 25px;
+    padding-right: 0%;
+}
+.name p{
+    padding-left: 0%;
+}
+
+.star{
+    padding-right: 5px;
+    padding-top: 10px;
+    width: 15px;
+    height: 15px;
+    padding-bottom: 5px;
+}
+.leftBox{
+    width: 80vw;
+    margin-top: 70px;
+}
+
+.leftBox p ,h1{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.leftBox p{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+body{
+    background-image: url(../IMG/bg-pattern-top-mobile.svg), url(../IMG/bg-pattern-bottom-mobile.svg);
+    background-position: left top, right bottom;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.leftBox .text{
+
+    width: 80vw;
+}
+.firstColumn  {
+    margin-top: 5px;
+}
+
+}
